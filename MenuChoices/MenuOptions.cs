@@ -10,11 +10,11 @@ public static class MenuOptions
         Console.Clear();
         int ticketsTotalPrice = 0, age;
         Console.WriteLine("How many people are going?");
-        int people = UserInputs.GetUserInput();
+        int people = UserInputs.GetUserChoice();
         if (people == 1)
         {
             Console.WriteLine("Enter your age");
-            age = UserInputs.GetUserInput();
+            age = UserInputs.GetUserChoice();
             ticketsTotalPrice = CalculateTicketPrice(age);
         }
         else if (people > 1)
@@ -22,7 +22,7 @@ public static class MenuOptions
             for (int i = 0; i < people; i++)
             {
                 Console.WriteLine($"Enter age for person {i + 1}: ");
-                age = UserInputs.GetUserInput();
+                age = UserInputs.GetUserChoice();
                 ticketsTotalPrice += CalculateTicketPrice(age);
             }
         }

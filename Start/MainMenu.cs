@@ -19,7 +19,7 @@ public class MainMenu
         do
         {
             InformationMessages.PresentOptions();
-            Choice = UserInputs.GetUserInput();
+            Choice = UserInputs.GetUserChoice();
 
             switch (Choice)
             {

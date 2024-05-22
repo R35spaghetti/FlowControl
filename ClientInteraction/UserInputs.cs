@@ -4,7 +4,7 @@ namespace FlowControl.ClientInteraction;
 
 public static class UserInputs
 {
-    public static int GetUserInput()
+    public static int GetUserChoice()
     {
         bool input = Int32.TryParse(Console.ReadLine(), out int anotherChance);
         if (input)
@@ -13,6 +13,6 @@ public static class UserInputs
         }
 
         ErrorMessages.ErrorMessageInvalidUsrInput();
-        return GetUserInput();
+        return GetUserChoice();
     }
 }
