@@ -33,7 +33,11 @@ public static class MenuOptions
         {
             int price = 0;
 
-            if (agePerson < 20)
+            if(agePerson is < 5 or > 100)
+            {
+                
+            }
+            else if (agePerson < 20)
             {
                 price += 80;
             }
@@ -41,6 +45,7 @@ public static class MenuOptions
             {
                 price += 90;
             }
+      
             else
             {
                 price += 120;
