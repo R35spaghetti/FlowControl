@@ -9,7 +9,7 @@ public static class InformationMessages
 
     public static void PresentOptions()
     {
-        Console.Write("Make your choice between 1-3");
+        Console.WriteLine("\n**Choose between 0-3**");
     }
 
     public static void ExitMessage()
