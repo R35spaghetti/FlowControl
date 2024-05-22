@@ -1,5 +1,6 @@
 using FlowControl.ClientInteraction;
 using FlowControl.ConsoleMessages;
+using FlowControl.MenuChoices;
 
 namespace FlowControl.Start;
 
@@ -24,6 +25,10 @@ public class MainMenu
             {
                 case 0:
                     InformationMessages.ExitMessage();
+                    break;
+                case 1:
+                    int priceOfTickets = MenuOptions.OrderMovieTickets();
+                    Console.WriteLine($"Total price: {priceOfTickets}");
                     break;
                 default:
                     ErrorMessages.ErrorMessageInvalidUsrInput();
