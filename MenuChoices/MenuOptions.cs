@@ -9,7 +9,12 @@ public static class MenuOptions
     {
         Console.Clear();
         int ticketsTotalPrice = 0, age;
-        Console.WriteLine("How many people are going?");
+        Console.WriteLine("How many people are going?" +
+                          "\n Prices differ by age." +
+                          "\n Youths = 80SEK" +
+                          "\n Seniors = 90SEK" +
+                          "\n Standard price = 120SEK" +
+                          "\n People under the age of 5 or above 100 gets tickets for free.");
         int people = UserInputs.GetUserChoice();
         if (people == 1)
         {
@@ -87,6 +92,6 @@ public static class MenuOptions
             }
         }
 
-        Console.WriteLine($"{thirdWord[2]}");
+        Console.WriteLine($"{thirdWord[2]} is the third word");
     }
 }
