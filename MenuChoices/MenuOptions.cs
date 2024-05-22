@@ -50,17 +50,4 @@ public static class MenuOptions
             return price;
         }
     }
-
-    //Menyval 2: Upprepa tio gånger
-    public static void RepeatTenTimes()
-    {
-        Console.Clear();
-        Console.WriteLine("Please enter an arbitrary input");
-        string input = UserInputs.GetUserInput();
-
-        for (int i = 1; i <= 10; i++)
-        {
-            Console.Write($"{i}.{input} ");
-        }
-    }
 }
