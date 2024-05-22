@@ -15,4 +15,10 @@ public static class UserInputs
         ErrorMessages.ErrorMessageInvalidUsrInput();
         return GetUserChoice();
     }
+
+    public static string GetUserInput()
+    {
+        string input = Console.ReadLine() ?? string.Empty;
+        return input;
+    }
 }
