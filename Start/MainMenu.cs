@@ -6,11 +6,11 @@ namespace FlowControl.Start;
 
 public class MainMenu
 {
-    private int Choice { get; set; }
+    private int _choice { get; set; }
 
     public MainMenu(int choice)
     {
-        Choice = choice;
+        _choice = choice;
     }
 
 
@@ -19,9 +19,9 @@ public class MainMenu
         do
         {
             InformationMessages.PresentOptions();
-            Choice = UserInputs.GetUserChoice();
+            _choice = UserInputs.GetUserChoice();
 
-            switch (Choice)
+            switch (_choice)
             {
                 case 0:
                     InformationMessages.ExitMessage();
@@ -40,6 +40,6 @@ public class MainMenu
                     ErrorMessages.ErrorMessageInvalidUsrInput();
                     break;
             }
-        } while (Choice != 0);
+        } while (_choice != 0);
     }
 }
