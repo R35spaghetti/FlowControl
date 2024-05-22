@@ -30,6 +30,9 @@ public class MainMenu
                     int priceOfTickets = MenuOptions.OrderMovieTickets();
                     Console.WriteLine($"Total price: {priceOfTickets}");
                     break;
+                case 2:
+                    MenuOptions.RepeatTenTimes();
+                    break;
                 default:
                     ErrorMessages.ErrorMessageInvalidUsrInput();
                     break;
