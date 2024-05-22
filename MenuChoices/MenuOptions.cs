@@ -80,6 +80,7 @@ public static class MenuOptions
             Console.WriteLine("Enter a sentence with at least 3 words");
             string input = UserInputs.GetUserInput();
             thirdWord = new List<string>(input.Split([]));
+            thirdWord = thirdWord.Where(x => !string.IsNullOrEmpty(x.ToString())).ToList();
             if (thirdWord.Count >= 3)
             {
                 lessThanThree = false;
