@@ -33,6 +33,9 @@ public class MainMenu
                 case 2:
                     MenuOptions.RepeatTenTimes();
                     break;
+                case 3:
+                    MenuOptions.GetThirdWord();
+                    break;
                 default:
                     ErrorMessages.ErrorMessageInvalidUsrInput();
                     break;

@@ -63,4 +63,24 @@ public static class MenuOptions
             Console.Write($"{i}.{input} ");
         }
     }
+
+    //Menyval 3: Det tredje ordet
+    public static void GetThirdWord()
+    {
+        bool lessThanThree = true;
+        List<string> thirdWord = new List<string>();
+        Console.Clear();
+        while (lessThanThree)
+        {
+            Console.WriteLine("Enter a sentence with at least 3 words");
+            string input = UserInputs.GetUserInput();
+            thirdWord = new List<string>(input.Split([]));
+            if (thirdWord.Count >= 3)
+            {
+                lessThanThree = false;
+            }
+        }
+
+        Console.WriteLine($"{thirdWord[2]}");
+    }
 }
